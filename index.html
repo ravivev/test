@@ -4,10 +4,34 @@
         <title>
             lesson30
         </title>
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+       
     </head>
     <body>
-        <div>evyatar</div>
+
+        <div class="multiple-items" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div><h3>3</h3></div>
+            <div><h3>4</h3></div>
+            <div><h3>5</h3></div>
+            <div><h3>6</h3></div>
+          </div>
+          
         evyatar raviv
-        <script></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script>
+            $('.multiple-items').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 3
+            });</script>
     </body>
 </html>
